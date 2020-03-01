@@ -5,10 +5,10 @@
 #docker build --tag=app .
 
 
-dockerpath="msaif41/dockerproj"
+dockerpath="msaif41/dockerproj:app"
 
 # Authenticate & Tag
-echo "Docker ID and Image: $dockerpath"
+echo "Docker IDdock and Image: $dockerpath"
 docker login &&\
     docker image tag app $dockerpath
 
